@@ -26,7 +26,7 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">DESKTOP-BHU8VRP</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAizxefKmxckex4NjttP//0QAAAAACAAAAAAAQZgAAAAEAACAAAADUgtkUm7LgLgaHLqS36gU33txr11WbjKL529m33SQHswAAAAAOgAAAAAIAACAAAAB1t3myifM34bev8wHMXvdOyHxZ3Bv3AycHtbqL/Tw7zJAAAADR3GhJEs2b85mv0IdCfNNNfWnxGB9BudtXZeO6O8oM12il+nelvGTsbo9bQbTe1zoMoUqJS4Bmd0GW9vUndA3VUirnn1Ay+wRiYEx+sSOEBh4vaaOhLJODCp0F+JZOe6o6P1ZqmtA1pJu5iWdMOkcTE7AL0M7NnqSlJOjnUqjNYwKwxdOByWrpAvRo/5zR1PxAAAAALc08ub6r/VSoJO8ia77He2bdaQFEbrz3rqkiHYXiqO40LKfc5B1ltAAQl2W+WEE/Npi6uIRarlBoLHzz8lzn2Q==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAizxefKmxckex4NjttP//0QAAAAACAAAAAAAQZgAAAAEAACAAAACkdxzyPDvwYFY/f/YvhOoPd7UumvxZEWxT0s4KRUGelgAAAAAOgAAAAAIAACAAAADn6uWRfMhhVhkEsjm4uATm071F/YJrPLpvX+2QryM9G5AAAACbEPMzR37dT3QUQi1TQWb83J9itBfqrRgGQ5J2VELnJJ4PSC/7C/V9qzm40SCghE7CoYSO/qKFyXcJ93ctYYboN0FZfoC3eAd6E5kmMbMiTxrfy37W/RK/Ywm/QABv9RJAriFqMDixSZu1gzdT3iBENatPnJrTVlUTcRsuaGi7jBGJN0qCSIDCMFDmA5Ery29AAAAAZeqXiMdC5xdX/v29L0NMW4l6Hfq73mLgJxas/ilMue1uyB5STa0yGXRKuf9c38k5warIU5Xfjk7juxLgJWdnWg==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
@@ -42,17 +42,17 @@
                 <SSIS:Property SSIS:Name="Name">Package</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">34</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">41</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{87530F31-B08F-43F7-B5FE-B0D7AE95879E}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{52FD70C5-238B-4F7F-8B36-006DB304CC43}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
                 <SSIS:Property SSIS:Name="ProtectionLevel">1</SSIS:Property>
               </SSIS:Properties>
               <SSIS:Parameters>
-                <SSIS:Parameter SSIS:Name="CM.DESKTOP-BHU8VRP\SQLEXPRESS.SQL100.ConnectByProxy">
+                <SSIS:Parameter SSIS:Name="CM.DESKTOP-BHU8VRP.ConnectByProxy">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -67,7 +67,7 @@
                     <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.DESKTOP-BHU8VRP\SQLEXPRESS.SQL100.ConnectionString">
+                <SSIS:Parameter SSIS:Name="CM.DESKTOP-BHU8VRP.ConnectionString">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -78,11 +78,11 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">Data Source=DESKTOP-BHU8VRP\SQLEXPRESS;Initial Catalog=SQL100;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-Package-{36A06E0E-BD9B-41AA-976B-A92C06194AC9}DESKTOP-BHU8VRP\SQLEXPRESS.SQL100;Auto Translate=False;</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">Data Source=DESKTOP-BHU8VRP;Initial Catalog=AdventureWorksLT2019;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-Package-{36A06E0E-BD9B-41AA-976B-A92C06194AC9}DESKTOP-BHU8VRP\SQLEXPRESS.SQL100;</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.DESKTOP-BHU8VRP\SQLEXPRESS.SQL100.ConnectRetryCount">
+                <SSIS:Parameter SSIS:Name="CM.DESKTOP-BHU8VRP.ConnectRetryCount">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -97,7 +97,7 @@
                     <SSIS:Property SSIS:Name="DataType">9</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.DESKTOP-BHU8VRP\SQLEXPRESS.SQL100.ConnectRetryInterval">
+                <SSIS:Parameter SSIS:Name="CM.DESKTOP-BHU8VRP.ConnectRetryInterval">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -112,7 +112,7 @@
                     <SSIS:Property SSIS:Name="DataType">9</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.DESKTOP-BHU8VRP\SQLEXPRESS.SQL100.ConnectUsingManagedIdentity">
+                <SSIS:Parameter SSIS:Name="CM.DESKTOP-BHU8VRP.ConnectUsingManagedIdentity">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -127,7 +127,7 @@
                     <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.DESKTOP-BHU8VRP\SQLEXPRESS.SQL100.InitialCatalog">
+                <SSIS:Parameter SSIS:Name="CM.DESKTOP-BHU8VRP.InitialCatalog">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -138,11 +138,11 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">SQL100</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">AdventureWorksLT2019</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.DESKTOP-BHU8VRP\SQLEXPRESS.SQL100.Password">
+                <SSIS:Parameter SSIS:Name="CM.DESKTOP-BHU8VRP.Password">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -156,7 +156,7 @@
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.DESKTOP-BHU8VRP\SQLEXPRESS.SQL100.RetainSameConnection">
+                <SSIS:Parameter SSIS:Name="CM.DESKTOP-BHU8VRP.RetainSameConnection">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -171,7 +171,7 @@
                     <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.DESKTOP-BHU8VRP\SQLEXPRESS.SQL100.ServerName">
+                <SSIS:Parameter SSIS:Name="CM.DESKTOP-BHU8VRP.ServerName">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -182,11 +182,11 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">DESKTOP-BHU8VRP\SQLEXPRESS</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">DESKTOP-BHU8VRP</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.DESKTOP-BHU8VRP\SQLEXPRESS.SQL100.UserName">
+                <SSIS:Parameter SSIS:Name="CM.DESKTOP-BHU8VRP.UserName">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -226,7 +226,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">1250</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">1252</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">9</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
