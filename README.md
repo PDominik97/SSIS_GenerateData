@@ -1,4 +1,4 @@
-# SSIS_Project8
+# SSIS_GenerateData
 
 The solution is used to generate data using a python script and then load it into the AdventureWorksLT2019 database.
 
