@@ -7,25 +7,25 @@
   DTS:CreatorName="DESKTOP-BHU8VRP\Dominik"
   DTS:DTSID="{578520E3-2F7D-4806-9D2F-18BCCF2861AB}"
   DTS:ExecutableType="Microsoft.Package"
-  DTS:LastModifiedProductVersion="16.0.948.0"
+  DTS:LastModifiedProductVersion="16.0.5035.3"
   DTS:LocaleID="1045"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="41"
-  DTS:VersionGUID="{52FD70C5-238B-4F7F-8B36-006DB304CC43}">
+  DTS:VersionBuild="73"
+  DTS:VersionGUID="{FFA478C3-3C51-42FC-BD2C-F0CA24C3E9E5}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
     <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[DESKTOP-BHU8VRP]"
+      DTS:refId="Package.ConnectionManagers[DESKTOP-9J527KO.AdventureWorksLT2019]"
       DTS:CreationName="OLEDB"
-      DTS:DTSID="{36A06E0E-BD9B-41AA-976B-A92C06194AC9}"
-      DTS:ObjectName="DESKTOP-BHU8VRP">
+      DTS:DTSID="{4325CDE9-C5BE-457D-8A6C-977361794922}"
+      DTS:ObjectName="DESKTOP-9J527KO.AdventureWorksLT2019">
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=DESKTOP-BHU8VRP;Initial Catalog=AdventureWorksLT2019;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-Package-{36A06E0E-BD9B-41AA-976B-A92C06194AC9}DESKTOP-BHU8VRP\SQLEXPRESS.SQL100;" />
+          DTS:ConnectionString="Data Source=DESKTOP-9J527KO;Initial Catalog=AdventureWorksLT2019;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-Package-{4325CDE9-C5BE-457D-8A6C-977361794922}DESKTOP-9J527KO.AdventureWorksLT2019;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -41,7 +41,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="C:\SSIS\Integration_Services_Project3\person.txt">
+          DTS:ConnectionString="C:\SSIS\SSIS_GenerateData\person.txt">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -50,7 +50,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 0"
-              DTS:DTSID="{E3B3DC00-23A1-4025-A2FF-B9D87F5DB2C9}"
+              DTS:DTSID="{F8556DDC-614C-49A2-AF14-75D3C96536C1}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -59,7 +59,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 1"
-              DTS:DTSID="{C0FEBFF7-9558-4D5C-9FA0-DDE053E1D879}"
+              DTS:DTSID="{52F05275-E514-45AA-9D2B-3B7E5A70877B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -67,13 +67,53 @@
               DTS:DataType="133"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 2"
-              DTS:DTSID="{AA10E418-F678-425E-A276-34368F6AC47E}"
+              DTS:DTSID="{8877EB67-91A2-4542-BDC5-C3BFB4590B1B}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
+  <DTS:PackageParameters>
+    <DTS:PackageParameter
+      DTS:CreationName=""
+      DTS:DataType="8"
+      DTS:DTSID="{E27F209E-7287-443D-9233-0FF55429D6A5}"
+      DTS:ObjectName="Copy_rename_argument">
+      <DTS:Property
+        DTS:DataType="8"
+        DTS:Name="ParameterValue">\copy_file_rename.py</DTS:Property>
+    </DTS:PackageParameter>
+    <DTS:PackageParameter
+      DTS:CreationName=""
+      DTS:DataType="8"
+      DTS:DTSID="{55612446-701D-4031-885F-BABFFA0CC444}"
+      DTS:ObjectName="input_file_argument"
+      DTS:Required="True">
+      <DTS:Property
+        DTS:DataType="8"
+        DTS:Name="ParameterValue">\input_file_2.py</DTS:Property>
+    </DTS:PackageParameter>
+    <DTS:PackageParameter
+      DTS:CreationName=""
+      DTS:DataType="8"
+      DTS:DTSID="{80DA0538-DD09-4469-B614-915D581230B6}"
+      DTS:ObjectName="local_python_path"
+      DTS:Required="True">
+      <DTS:Property
+        DTS:DataType="8"
+        DTS:Name="ParameterValue">C:\Users\Admin\AppData\Local\Programs\Python\Python310\python.exe</DTS:Property>
+    </DTS:PackageParameter>
+    <DTS:PackageParameter
+      DTS:CreationName=""
+      DTS:DataType="8"
+      DTS:DTSID="{E5B17BBF-8978-4DBF-A0F0-C9D1C4D15D1A}"
+      DTS:ObjectName="WorkingDirectory_path">
+      <DTS:Property
+        DTS:DataType="8"
+        DTS:Name="ParameterValue">C:\SSIS\SSIS_GenerateData</DTS:Property>
+    </DTS:PackageParameter>
+  </DTS:PackageParameters>
   <DTS:Variables />
   <DTS:Executables>
     <DTS:Executable
@@ -86,11 +126,17 @@
       DTS:ObjectName="Copy &amp; rename input file"
       DTS:ThreadHint="0">
       <DTS:Variables />
+      <DTS:PropertyExpression
+        DTS:Name="Arguments">@[$Package::WorkingDirectory_path]+ @[$Package::Copy_rename_argument]</DTS:PropertyExpression>
+      <DTS:PropertyExpression
+        DTS:Name="Executable">@[$Package::local_python_path]</DTS:PropertyExpression>
+      <DTS:PropertyExpression
+        DTS:Name="WorkingDirectory">@[$Package::WorkingDirectory_path]</DTS:PropertyExpression>
       <DTS:ObjectData>
         <ExecuteProcessData
-          Executable="C:\Users\Dominik\AppData\Local\Programs\Python\Python38-32\python.exe"
-          Arguments="C:\SSIS\Integration_Services_Project3\copy_file_rename.py"
-          WorkingDirectory="C:\SSIS\Integration_Services_Project3\" />
+          Executable="C:\Users\Admin\AppData\Local\Programs\Python\Python310\python.exe"
+          Arguments="C:\SSIS\SSIS_GenerateData\copy_file_rename.py"
+          WorkingDirectory="C:\SSIS\SSIS_GenerateData" />
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
@@ -103,11 +149,17 @@
       DTS:ObjectName="Create input file &quot;person&quot;"
       DTS:ThreadHint="0">
       <DTS:Variables />
+      <DTS:PropertyExpression
+        DTS:Name="Arguments">@[$Package::WorkingDirectory_path] +  @[$Package::input_file_argument]</DTS:PropertyExpression>
+      <DTS:PropertyExpression
+        DTS:Name="Executable">@[$Package::local_python_path]</DTS:PropertyExpression>
+      <DTS:PropertyExpression
+        DTS:Name="WorkingDirectory">@[$Package::WorkingDirectory_path]</DTS:PropertyExpression>
       <DTS:ObjectData>
         <ExecuteProcessData
-          Executable="C:\Users\Dominik\AppData\Local\Programs\Python\Python38-32\python.exe"
-          Arguments="C:\SSIS\Integration_Services_Project3\input_file_2.py"
-          WorkingDirectory="C:\SSIS\Integration_Services_Project3\" />
+          Executable="C:\Users\Admin\AppData\Local\Programs\Python\Python310\python.exe"
+          Arguments="C:\SSIS\SSIS_GenerateData\input_file_2.py"
+          WorkingDirectory="C:\SSIS\SSIS_GenerateData" />
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
@@ -118,11 +170,11 @@
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="insert into table Contact"
-      DTS:ThreadHint="1">
+      DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{36A06E0E-BD9B-41AA-976B-A92C06194AC9}"
+          SQLTask:Connection="{4325CDE9-C5BE-457D-8A6C-977361794922}"
           SQLTask:SqlStatementSource="insert into dbo.Contact&#xA;select FirstName, LastName, CONCAT(FirstName, '.', LastName, '@email.com') from dbo.Employees &#xA;where add_date = (select Top 1 add_date from dbo.Employees order by add_date desc)" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
@@ -344,8 +396,8 @@
               <connections>
                 <connection
                   refId="Package\load into table Employees\OLE DB Destination.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[DESKTOP-BHU8VRP]"
-                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-BHU8VRP]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-9J527KO.AdventureWorksLT2019]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-9J527KO.AdventureWorksLT2019]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -477,47 +529,47 @@
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="192,41.6"
+          Size="192,41.3333333333334"
           Id="Package\Copy &amp; rename input file"
           TopLeft="285.799988675119,161.000001095136" />
         <NodeLayout
-          Size="192.8,41.6"
+          Size="192.666666666667,41.3333333333334"
           Id="Package\Create input file &quot;person&quot;"
-          TopLeft="381.466651699279,62.8666674587463" />
+          TopLeft="381.466651699279,61.4982463803576" />
         <NodeLayout
-          Size="187.2,41.6"
+          Size="187.333333333334,41.3333333333334"
           Id="Package\insert into table Contact"
           TopLeft="427.222205245937,298.133335702683" />
         <NodeLayout
-          Size="197.6,41.6"
+          Size="197.333333333334,41.3333333333334"
           Id="Package\load into table Employees"
           TopLeft="533.299978840352,168.51111226594" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="508.666651699279,104.466667458746">
+          TopLeft="508.57776281039,102.831579713691">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="123.433327141073,64.0444448071937"
+              EndConnector="123.388882696629,65.6795325522491"
               Start="0,0"
-              End="123.433327141073,56.5444448071937">
+              End="123.388882696629,58.1795325522491">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,21.9340467861229" />
+                    End="0,22.5963790019403" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,21.9340467861229"
-                    Point2="0,25.9340467861229"
-                    Point3="4,25.9340467861229" />
+                    Point1="0,22.5963790019403"
+                    Point2="0,26.5963790019403"
+                    Point3="4,26.5963790019403" />
                   <mssgle:LineSegment
-                    End="119.433327141073,25.9340467861229" />
+                    End="119.388882696629,26.5963790019403" />
                   <mssgle:CubicBezierSegment
-                    Point1="119.433327141073,25.9340467861229"
-                    Point2="123.433327141073,25.9340467861229"
-                    Point3="123.433327141073,29.9340467861229" />
+                    Point1="119.388882696629,26.5963790019403"
+                    Point2="123.388882696629,26.5963790019403"
+                    Point3="123.388882696629,30.5963790019403" />
                   <mssgle:LineSegment
-                    End="123.433327141073,56.5444448071937" />
+                    End="123.388882696629,58.1795325522491" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -528,30 +580,30 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 1]"
-          TopLeft="447.066651699279,104.466667458746">
+          TopLeft="447.022207254835,102.831579713691">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-65.2666630241601,56.5333336363897"
+              EndConnector="-65.2222185797156,58.1684213814451"
               Start="0,0"
-              End="-65.2666630241601,49.0333336363897">
+              End="-65.2222185797156,50.6684213814451">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,18.892510410785" />
+                    End="0,19.5548171688762" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,18.892510410785"
-                    Point2="0,22.892510410785"
-                    Point3="-4,22.892510410785" />
+                    Point1="0,19.5548171688762"
+                    Point2="0,23.5548171688762"
+                    Point3="-4,23.5548171688762" />
                   <mssgle:LineSegment
-                    End="-61.2666630241601,22.892510410785" />
+                    End="-61.2222185797156,23.5548171688762" />
                   <mssgle:CubicBezierSegment
-                    Point1="-61.2666630241601,22.892510410785"
-                    Point2="-65.2666630241601,22.892510410785"
-                    Point3="-65.2666630241601,26.892510410785" />
+                    Point1="-61.2222185797156,23.5548171688762"
+                    Point2="-65.2222185797156,23.5548171688762"
+                    Point3="-65.2222185797156,27.5548171688762" />
                   <mssgle:LineSegment
-                    End="-65.2666630241601,49.0333336363897" />
+                    End="-65.2222185797156,50.6684213814451" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -601,35 +653,37 @@
     design-time-name="Package\load into table Employees">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="171.2,41.6"
+          Size="171.333333333334,41.3333333333334"
           Id="Package\load into table Employees\OLE DB Destination"
-          TopLeft="185.666658653154,173.600001363754" />
+          TopLeft="185.666658653154,172.91579082456" />
         <NodeLayout
-          Size="151.2,41.6"
+          Size="151.333333333334,41.3333333333334"
           Id="Package\load into table Employees\Flat File Source"
           TopLeft="197.499992152056,50.2666670661503" />
         <EdgeLayout
           Id="Package\load into table Employees.Paths[Flat File Source Output]"
-          TopLeft="272.183325402605,91.8666670661503">
+          TopLeft="272.249992069272,91.6000003994836">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,81.7333342976037"
+              EndConnector="0,81.315790425076"
               Start="0,0"
-              End="0,74.2333342976037">
+              End="0,73.815790425076">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,74.2333342976037" />
+                    End="0,73.815790425076" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
