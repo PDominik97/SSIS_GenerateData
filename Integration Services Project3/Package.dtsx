@@ -11,8 +11,8 @@
   DTS:LocaleID="1045"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="73"
-  DTS:VersionGUID="{FFA478C3-3C51-42FC-BD2C-F0CA24C3E9E5}">
+  DTS:VersionBuild="74"
+  DTS:VersionGUID="{A6AD0A02-3AF5-49B0-AA5D-F77095F674C8}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -78,6 +78,7 @@
     <DTS:PackageParameter
       DTS:CreationName=""
       DTS:DataType="8"
+      DTS:Description="Do not change!"
       DTS:DTSID="{E27F209E-7287-443D-9233-0FF55429D6A5}"
       DTS:ObjectName="Copy_rename_argument">
       <DTS:Property
@@ -87,9 +88,9 @@
     <DTS:PackageParameter
       DTS:CreationName=""
       DTS:DataType="8"
+      DTS:Description="Do not change!"
       DTS:DTSID="{55612446-701D-4031-885F-BABFFA0CC444}"
-      DTS:ObjectName="input_file_argument"
-      DTS:Required="True">
+      DTS:ObjectName="input_file_argument">
       <DTS:Property
         DTS:DataType="8"
         DTS:Name="ParameterValue">\input_file_2.py</DTS:Property>
@@ -97,9 +98,9 @@
     <DTS:PackageParameter
       DTS:CreationName=""
       DTS:DataType="8"
+      DTS:Description="Change for your local path"
       DTS:DTSID="{80DA0538-DD09-4469-B614-915D581230B6}"
-      DTS:ObjectName="local_python_path"
-      DTS:Required="True">
+      DTS:ObjectName="local_python_path">
       <DTS:Property
         DTS:DataType="8"
         DTS:Name="ParameterValue">C:\Users\Admin\AppData\Local\Programs\Python\Python310\python.exe</DTS:Property>
@@ -107,6 +108,7 @@
     <DTS:PackageParameter
       DTS:CreationName=""
       DTS:DataType="8"
+      DTS:Description="Change for your local path"
       DTS:DTSID="{E5B17BBF-8978-4DBF-A0F0-C9D1C4D15D1A}"
       DTS:ObjectName="WorkingDirectory_path">
       <DTS:Property
